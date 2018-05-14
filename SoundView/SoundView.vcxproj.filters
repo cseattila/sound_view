@@ -19,6 +19,12 @@
     <Filter Include="Source Files\view">
       <UniqueIdentifier>{c4a291be-f8ad-44f1-8b7a-e180b91c24b3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\model">
+      <UniqueIdentifier>{e9effab8-4c46-418a-93fd-f9c8aaa99395}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\model\files">
+      <UniqueIdentifier>{b6f9a694-2dec-4637-8ffc-94d17dcde4f8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -33,12 +39,27 @@
     <ClInclude Include="SoundView.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="WavFile.h">
+      <Filter>Header Files\model\files</Filter>
+    </ClInclude>
+    <ClInclude Include="WavHead.h">
+      <Filter>Header Files\model\files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileNotAssignedException.h">
+      <Filter>Header Files\model\files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SoundView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WavFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WavHead.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
