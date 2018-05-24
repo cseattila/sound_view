@@ -148,6 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="FileNotAssignedException.h" />
+    <ClInclude Include="MainLoop.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="SoundView.h" />
     <ClInclude Include="stdafx.h" />
@@ -156,6 +157,7 @@
     <ClInclude Include="WavHead.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="MainLoop.cpp" />
     <ClCompile Include="SoundView.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

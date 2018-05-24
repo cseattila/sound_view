@@ -25,6 +25,9 @@
     <Filter Include="Header Files\model\files">
       <UniqueIdentifier>{b6f9a694-2dec-4637-8ffc-94d17dcde4f8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\app">
+      <UniqueIdentifier>{2b699c4f-5c1f-4bbb-9a59-c3aacdef9463}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -48,6 +51,9 @@
     <ClInclude Include="FileNotAssignedException.h">
       <Filter>Header Files\model\files</Filter>
     </ClInclude>
+    <ClInclude Include="MainLoop.h">
+      <Filter>Header Files\app</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -60,6 +66,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="WavHead.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainLoop.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
