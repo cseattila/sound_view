@@ -4,41 +4,25 @@
 
 struct MainLoop {
 
+	MainLoop(LPCTSTR lpTableName);
+
 	MainLoop& setHInstace(HINSTANCE hInstance);
 
-	MainLoop& run() {
-		try { for (;;)oneStep(); }
-		catch (EndLoopException e) {
-
-		}
-		return *this;
-	}
-
-	MainLoop() :hAccelTable(NULL) {
-	}
-
-	int result() {
-		return (int)currentMsg.wParam;
-	}
+	MainLoop& run();
+		
+	int result();
 
 private:
 	class EndLoopException {};
-	void grabMsg() {
-		BOOL bRet = GetMessage(&currentMsg, nullptr, 0, 0);
-		if ((bRet == 0) || (bRet == -1)) throw   EndLoopException();
+	
+	void grabMsg();
 
-	}
+	void oneStep();
 
-	void oneStep() {
-		grabMsg();
-		handleMsg();
-	}
-	void handleMsg() {
-		if (!TranslateAccelerator(currentMsg.hwnd, hAccelTable, &currentMsg)) {
-			TranslateMessage(&currentMsg);
-			DispatchMessage(&currentMsg);
-		}
-	}
+	void handleMsg();
+
 	HACCEL hAccelTable;
 	MSG currentMsg;
+
+	LPCTSTR lpTableName;
 };
